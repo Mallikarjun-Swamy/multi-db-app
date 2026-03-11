@@ -1,0 +1,22 @@
+spring:
+  # Move this to the top level under spring to ensure it's seen
+  data:
+    mongodb:
+      uri: "mongodb+srv://amallik155_db_user:<db-password>@mymongocluster.jpckrhv.mongodb.net/my_mongo_db"
+
+  datasource:
+    postgres:
+      url: jdbc:postgresql://localhost:5432/userdb
+      username: postgres
+      password: ${POSTGRES_DB_PASSWORD}
+      driver-class-name: org.postgresql.Driver
+    oracle:
+      url: jdbc:oracle:thin:@localhost:1521:orcl
+      username: product_user
+      password: ${POSTGRES_DB_PASSWORD}
+      driver-class-name: oracle.jdbc.OracleDriver
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
