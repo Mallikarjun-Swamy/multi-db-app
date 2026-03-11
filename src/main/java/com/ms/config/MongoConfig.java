@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 public class MongoConfig {
     @Bean
     public MongoClient mongoClient() {
-        String uri = "mongodb+srv://amallik155_db_user:J9pRInR6aShr5Yc3@mymongocluster.jpckrhv.mongodb.net/my_mongo_db";
+        String uri = "mongodb+srv://amallik155_db_user:<add-db-password>@mymongocluster.jpckrhv.mongodb.net/my_mongo_db";
         return MongoClients.create(uri);
     }
 
